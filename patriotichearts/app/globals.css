@@ -25,19 +25,19 @@ html {
 
 /* Patriotic theme overrides */
 .text-patriotic-navy {
-  color: #0a2463;
+  color: #103659;
 }
 
 .bg-patriotic-navy {
-  background-color: #0a2463;
+  background-color: #103659;
 }
 
 .bg-patriotic-red {
-  background-color: #dc2626;
+  background-color: #a8261d;
 }
 
 .text-patriotic-red {
-  color: #dc2626;
+  color: #a8261d;
 }
 
 .bg-patriotic-blue {
@@ -53,11 +53,11 @@ html {
 }
 
 .border-patriotic-navy {
-  border-color: #0a2463;
+  border-color: #103659;
 }
 
 .border-patriotic-red {
-  border-color: #dc2626;
+  border-color: #a8261d;
 }
 
 .border-patriotic-gold {
@@ -74,7 +74,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0a2463;
+  background: #103659;
   border-radius: 5px;
 }
 
