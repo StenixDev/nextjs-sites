@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Patriotic theme overrides */
+.text-patriotic-navy {
+  color: #0a2463;
+}
+
+.bg-patriotic-navy {
+  background-color: #0a2463;
+}
+
+.bg-patriotic-red {
+  background-color: #dc2626;
+}
+
+.text-patriotic-red {
+  color: #dc2626;
+}
+
+.bg-patriotic-blue {
+  background-color: #1e40af;
+}
+
+.bg-patriotic-gold {
+  background-color: #d97706;
+}
+
+.text-patriotic-gold {
+  color: #d97706;
+}
+
+.border-patriotic-navy {
+  border-color: #0a2463;
+}
+
+.border-patriotic-red {
+  border-color: #dc2626;
+}
+
+.border-patriotic-gold {
+  border-color: #d97706;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0a2463;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e40af;
+}
