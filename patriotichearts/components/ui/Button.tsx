@@ -8,6 +8,7 @@ interface ButtonProps {
   size?: 'sm' | 'md' | 'lg';
   href?: string;
   className?: string;
+  target?: string;
   onClick?: () => void;
   type?: 'button' | 'submit' | 'reset';
 }
@@ -18,6 +19,7 @@ export default function Button({
   size = 'md',
   href,
   className = '',
+  target = '',
   onClick,
   type = 'button',
 }: ButtonProps) {
@@ -43,6 +45,14 @@ export default function Button({
   const styles = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
 
   if (href) {
+    if (target) {
+      return (
+        <a href={href} className={styles} target={target}>
+          {children}
+        </a>
+      );
+    }
+
     return (
       <a href={href} className={styles}>
         {children}

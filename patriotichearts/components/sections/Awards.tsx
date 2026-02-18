@@ -51,7 +51,7 @@ export default function Awards() {
           </div>
         </div>
       </section>
-      <div className=' bg-patriotic-navy py-10 flex justify-center items-center'>
+      <div className=' bg-patriotic-navy py-10 px-5 flex justify-center items-center'>
         <Image src={PeopleFirstbanner} alt='People First ' />
       </div>
     </>

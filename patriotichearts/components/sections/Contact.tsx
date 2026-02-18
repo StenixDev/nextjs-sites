@@ -1,10 +1,10 @@
-'use client';
-
 import { MapPin, Phone, Mail } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Card from '@/components/ui/Card';
+import alignable from '@/public/alignable.webp';
 
 import { CONTACT_INFO } from '@/data/siteData';
+import Image from 'next/image';
 
 export default function Contact() {
   return (
@@ -24,14 +24,14 @@ export default function Contact() {
               </h3>
               <div className='space-y-4'>
                 <div className='flex items-start'>
-                  <MapPin className='h-6 w-6 text-patriotic-red mr-3 flex-shrink-0 mt-0.5' />
+                  <MapPin className='h-6 w-6 text-patriotic-red mr-3 shrink-0 mt-0.5' />
                   <div>
                     <p className='font-medium text-gray-900'>Address</p>
                     <p className='text-gray-600'>{CONTACT_INFO.address}</p>
                   </div>
                 </div>
                 <div className='flex items-center'>
-                  <Phone className='h-6 w-6 text-patriotic-red mr-3 flex-shrink-0' />
+                  <Phone className='h-6 w-6 text-patriotic-red mr-3 shrink-0' />
                   <div>
                     <p className='font-medium text-gray-900'>Phone</p>
                     <a
@@ -43,7 +43,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className='flex items-center'>
-                  <Mail className='h-6 w-6 text-patriotic-red mr-3 flex-shrink-0' />
+                  <Mail className='h-6 w-6 text-patriotic-red mr-3 shrink-0' />
                   <div>
                     <p className='font-medium text-gray-900'>Email</p>
                     <a
@@ -57,12 +57,8 @@ export default function Contact() {
               </div>
 
               {/* Office Hours */}
-              <div className='mt-8 pt-6 border-t border-gray-200'>
-                <h4 className='font-medium text-gray-900 mb-2'>Office Hours</h4>
-                <p className='text-gray-600'>
-                  Monday - Friday: 9:00 AM - 5:00 PM PST
-                </p>
-                <p className='text-gray-600'>Saturday - Sunday: Closed</p>
+              <div className='mt-8 pt-6 border-t border-gray-200 flex justify-center'>
+                <Image src={alignable} alt='Highly Recommended by locals' />
               </div>
             </Card>
           </div>
