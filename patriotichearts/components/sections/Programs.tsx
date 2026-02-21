@@ -29,9 +29,9 @@ export default function Programs() {
             return (
               <Card
                 key={program.id}
-                className='h-full border-t-4 border-t-patriotic-red hover:shadow-xl transition-all duration-300'
+                className='h-full flex flex-col border-t-4 border-t-patriotic-red hover:shadow-xl transition-all duration-300'
               >
-                <div className='flex items-center mb-4  justify-center'>
+                <div className='flex items-center mb-4 justify-center'>
                   <div className='flex flex-col justify-center items-center'>
                     <Image
                       src={`/programs/${program.logo}`}
@@ -46,17 +46,19 @@ export default function Programs() {
                   </div>
                 </div>
 
-                <p className='text-patriotic-red  text-sm mb-2 text-center font-bold'>
+                <p className='text-patriotic-red text-sm mb-2 text-center font-bold'>
                   {program.tagline}
                 </p>
-                <p className='text-gray-600 text-sm leading-relaxed mb-4'>
+
+                {/* 👇 this grows and keeps button at bottom */}
+                <p className='text-gray-600 text-sm leading-relaxed mb-4 grow'>
                   {program.description}
                 </p>
 
                 <Button
                   variant='primary'
                   size='sm'
-                  className='w-full justify-center'
+                  className='w-full justify-center mt-auto'
                 >
                   Learn More
                 </Button>
