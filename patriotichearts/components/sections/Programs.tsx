@@ -1,10 +1,9 @@
-'use client';
-
 import { Briefcase, Heart, Car, Sparkles, Home, Cross } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import { PROGRAMS } from '@/data/siteData';
+import Image from 'next/image';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   briefcase: Briefcase,
@@ -32,20 +31,22 @@ export default function Programs() {
                 key={program.id}
                 className='h-full border-t-4 border-t-patriotic-red hover:shadow-xl transition-all duration-300'
               >
-                <div className='flex items-center mb-4'>
-                  <div
-                    className={`w-14 h-14 rounded-full flex items-center justify-center mr-4 ${
-                      index % 2 === 0 ? 'bg-patriotic-navy' : 'bg-patriotic-red'
-                    }`}
-                  >
-                    <Icon className='h-7 w-7 text-white' />
+                <div className='flex items-center mb-4  justify-center'>
+                  <div className='flex flex-col justify-center items-center'>
+                    <Image
+                      src={`/programs/${program.logo}`}
+                      alt={program.title}
+                      width={100}
+                      height={100}
+                      className='mb-3'
+                    />
+                    <h3 className='text-lg font-serif font-bold text-patriotic-navy'>
+                      {program.title}
+                    </h3>
                   </div>
-                  <h3 className='text-lg font-serif font-bold text-patriotic-navy'>
-                    {program.title}
-                  </h3>
                 </div>
 
-                <p className='text-patriotic-red font-medium text-sm mb-2'>
+                <p className='text-patriotic-red  text-sm mb-2 text-center font-bold'>
                   {program.tagline}
                 </p>
                 <p className='text-gray-600 text-sm leading-relaxed mb-4'>

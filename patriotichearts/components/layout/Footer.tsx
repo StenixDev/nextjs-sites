@@ -141,7 +141,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className='mt-8 pt-8 border-t border-blue-800'>
           <div className='flex flex-col md:flex-row justify-center  items-center'>
-            Copyright © – 2025 PatrioticHearts. All rights Reserved Worldwide.
+            Copyright © 2025 PatrioticHearts. All rights Reserved Worldwide.
           </div>
         </div>
       </div>

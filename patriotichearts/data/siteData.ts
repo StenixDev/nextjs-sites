@@ -16,6 +16,7 @@ export const PROGRAMS = [
     description:
       "Focuses on employment opportunities for veterans including daily, part-time, and full-time positions. We connect America's heroes with meaningful career opportunities.",
     icon: 'briefcase',
+    logo: 'HP-optimized.webp',
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const PROGRAMS = [
     description:
       "Direct financial assistance for urgent bills for active duty personnel, veterans, widows, and orphans. We're here when families need help the most.",
     icon: 'heart',
+    logo: 'MFA.jpg',
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ export const PROGRAMS = [
     description:
       'Our 501(c)(3) charity main funding source. Donate your car or truck, picked up within 48 hours. You receive a tax-deductible receipt for market value up to $500, or full sale price if sold for more.',
     icon: 'car',
+    logo: 'cardon2veterans.webp',
   },
   {
     id: 4,
@@ -40,6 +43,7 @@ export const PROGRAMS = [
     description:
       'Provides veterans with training in business incorporation, along with a comprehensive training manual and equipment for cleaning and maintenance services.',
     icon: 'sparkles',
+    logo: 'militaryclean.webp',
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ export const PROGRAMS = [
     description:
       'Financial aid for homeless veterans including food, shelter, and medical needs. We work to give those who served our country a place to call home.',
     icon: 'home',
+    logo: 'homelessVet.jpg',
   },
   {
     id: 6,
@@ -56,6 +61,7 @@ export const PROGRAMS = [
     description:
       'Augments guidance from base chaplaincies, providing spiritual support and guidance to military personnel and their families during challenging times.',
     icon: 'cross',
+    logo: 'tgw.webp',
   },
 ];
 
