@@ -1,18 +1,9 @@
-import { Briefcase, Heart, Car, Sparkles, Home, Cross } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import { PROGRAMS } from '@/data/siteData';
 import Image from 'next/image';
-
-const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  briefcase: Briefcase,
-  heart: Heart,
-  car: Car,
-  sparkles: Sparkles,
-  home: Home,
-  cross: Cross,
-};
+import { Link } from 'lucide-react';
 
 export default function Programs() {
   return (
@@ -24,8 +15,7 @@ export default function Programs() {
         />
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
-          {PROGRAMS.map((program, index) => {
-            const Icon = iconMap[program.icon];
+          {PROGRAMS.map((program) => {
             return (
               <Card
                 key={program.id}
@@ -58,9 +48,9 @@ export default function Programs() {
                 <Button
                   variant='primary'
                   size='sm'
-                  className='w-full justify-center mt-auto'
+                  className='w-full justify-center mt-auto cursor-pointer'
                 >
-                  Learn More
+                  <Link href={program.link}>Learn More</Link>
                 </Button>
               </Card>
             );

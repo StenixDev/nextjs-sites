@@ -1,6 +1,4 @@
-'use client';
-
-import { Heart, Car, Users } from 'lucide-react';
+import { Heart, Car } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import PaypalDonateForm from '../PaypalDonateForm';
 
@@ -12,7 +10,7 @@ export default function DonationCTA() {
     >
       {/* Background pattern */}
       <div className='absolute inset-0 opacity-10'>
-        <div className='absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent' />
+        <div className='absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-white via-transparent to-transparent' />
       </div>
 
       <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
