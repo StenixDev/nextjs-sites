@@ -1,9 +1,8 @@
-'use client';
-
 import { User } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Card from '@/components/ui/Card';
 import { TEAM_MEMBERS } from '@/data/siteData';
+import Image from 'next/image';
 
 export default function Team() {
   return (
@@ -21,7 +20,17 @@ export default function Team() {
               className='text-center h-full border-t-4 border-t-patriotic-navy'
             >
               <div className='w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4'>
-                <User className='h-12 w-12 text-gray-400' />
+                {member?.img ? (
+                  <Image
+                    src={`/profiles/${member.img}`}
+                    width={120}
+                    height={120}
+                    alt={member?.name || 'Member profile'}
+                    className='rounded-full'
+                  />
+                ) : (
+                  <User className='h-12 w-12 text-gray-400' />
+                )}
               </div>
               <h3 className='text-xl font-serif font-bold text-patriotic-navy mb-1'>
                 {member.name}

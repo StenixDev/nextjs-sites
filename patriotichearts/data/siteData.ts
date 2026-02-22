@@ -103,16 +103,19 @@ export const TEAM_MEMBERS = [
     id: 1,
     name: 'Mark Baird',
     title: 'Founder',
+    img: 'markbaird.jpg',
   },
   {
     id: 2,
     name: "Victoria 'Tori' Baird",
     title: 'Chairman of the Board',
+    img: 'ToriBairdProfile.jpg',
   },
   {
     id: 3,
     name: 'Tom Rippy',
     title: 'Treasurer',
+    img: '',
   },
 ];
 
