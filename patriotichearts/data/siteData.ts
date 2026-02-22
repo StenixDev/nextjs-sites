@@ -184,15 +184,31 @@ export const BOOKS = [
 ];
 
 export const SOCIAL_LINKS = [
-  { name: 'Facebook', icon: 'facebook', href: '#' },
-  { name: 'Twitter', icon: 'twitter', href: '#' },
-  { name: 'LinkedIn', icon: 'linkedin', href: '#' },
-  { name: 'Instagram', icon: 'instagram', href: '#' },
-  { name: 'YouTube', icon: 'youtube', href: '#' },
+  {
+    name: 'Facebook',
+    icon: 'facebook',
+    href: 'https://facebook.com/patriotichearts',
+  },
+  { name: 'Twitter', icon: 'twitter', href: 'https://x.com/HirePatriots' },
+  {
+    name: 'LinkedIn',
+    icon: 'linkedin',
+    href: 'https://www.linkedin.com/in/markbaird/',
+  },
+  {
+    name: 'Instagram',
+    icon: 'instagram',
+    href: 'https://www.instagram.com/mark.baird/',
+  },
+  {
+    name: 'YouTube',
+    icon: 'youtube',
+    href: 'https://www.youtube.com/@patriotichearts',
+  },
 ];
 
 export const CONTACT_INFO = {
   address: '300 Carlsbad Village Dr., Ste 108A, #159, Carlsbad, CA 92008',
   phone: '760-730-3734',
-  email: 'info@patriotichearts.org',
+  email: 'founder@patriotichearts.org',
 };

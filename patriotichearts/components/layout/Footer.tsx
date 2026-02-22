@@ -12,6 +12,8 @@ import {
   Mail,
 } from 'lucide-react';
 import { SOCIAL_LINKS, CONTACT_INFO } from '@/data/siteData';
+import Image from 'next/image';
+import Logo from '@/public/PH-LOGO.png';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   facebook: Facebook,
@@ -29,10 +31,8 @@ export default function Footer() {
           {/* About Section */}
           <div className='lg:col-span-2'>
             <div className='flex items-center space-x-2 mb-4'>
-              <div className='w-10 h-10 bg-patriotic-red rounded-full flex items-center justify-center'>
-                <span className='text-white font-serif font-bold text-xl'>
-                  PH
-                </span>
+              <div className='w-10 h-10  rounded-full flex items-center justify-center'>
+                <Image src={Logo} alt='PatrioticHearts' />
               </div>
               <span className='font-serif font-bold text-xl'>
                 Patriotic Hearts
@@ -89,13 +89,13 @@ export default function Footer() {
             <h3 className='font-serif font-bold text-lg mb-4'>Contact Us</h3>
             <ul className='space-y-3'>
               <li className='flex items-start space-x-3'>
-                <MapPin className='h-5 w-5 text-patriotic-red shrink-0 mt-0.5' />
+                <MapPin className='h-5 w-5  shrink-0 mt-0.5' />
                 <span className='text-gray-300 text-sm'>
                   {CONTACT_INFO.address}
                 </span>
               </li>
               <li className='flex items-center space-x-3'>
-                <Phone className='h-5 w-5 text-patriotic-red shrink-0' />
+                <Phone className='h-5 w-5  shrink-0' />
                 <a
                   href={`tel:${CONTACT_INFO.phone}`}
                   className='text-gray-300 hover:text-patriotic-red transition-colors'
@@ -104,7 +104,7 @@ export default function Footer() {
                 </a>
               </li>
               <li className='flex items-center space-x-3'>
-                <Mail className='h-5 w-5 text-patriotic-red shrink-0' />
+                <Mail className='h-5 w-5  shrink-0' />
                 <a
                   href={`mailto:${CONTACT_INFO.email}`}
                   className='text-gray-300 hover:text-patriotic-red transition-colors'
@@ -129,7 +129,7 @@ export default function Footer() {
                       className='text-gray-300 hover:text-patriotic-red transition-colors'
                       aria-label={social.name}
                     >
-                      <Icon className='h-5 w-5' />
+                      <Icon className='h-5 w-5 ' />
                     </a>
                   );
                 })}
@@ -141,7 +141,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className='mt-8 pt-8 border-t border-blue-800'>
           <div className='flex flex-col md:flex-row justify-center  items-center'>
-            Copyright © 2025 PatrioticHearts. All rights Reserved Worldwide.
+            Copyright © 2026 PatrioticHearts. All rights Reserved Worldwide.
           </div>
         </div>
       </div>
