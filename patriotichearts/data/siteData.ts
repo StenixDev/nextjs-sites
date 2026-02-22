@@ -38,12 +38,12 @@ export const PROGRAMS = [
   },
   {
     id: 4,
-    title: 'US Military Clean',
+    title: 'Veteran Enterprises',
     tagline: 'A Biz 4 Veterans!',
     description:
-      'Provides veterans with training in business incorporation, along with a comprehensive training manual and equipment for cleaning and maintenance services.',
+      'The mission of Veteran Enterprises is to empower military veterans to achieve financial independence and professional fulfillment through the mastery of service-based entrepreneurship',
     icon: 'sparkles',
-    logo: 'militaryclean.webp',
+    logo: 'usve.jpg',
   },
   {
     id: 5,

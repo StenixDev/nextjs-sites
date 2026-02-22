@@ -2,6 +2,7 @@
 
 import { Heart, Car, Users } from 'lucide-react';
 import Button from '@/components/ui/Button';
+import PaypalDonateForm from '../PaypalDonateForm';
 
 export default function DonationCTA() {
   return (
@@ -41,9 +42,7 @@ export default function DonationCTA() {
               Every dollar fuels our mission to support veterans and their
               families. Your contribution goes directly to those in need.
             </p>
-            <Button variant='primary' size='lg' href='#'>
-              Donate Today
-            </Button>
+            <PaypalDonateForm />
           </div>
 
           {/* Vehicle Donations */}
@@ -58,7 +57,11 @@ export default function DonationCTA() {
               Turn your old car into hope for veterans. Free pickup, tax
               deductible, and you help fund our programs.
             </p>
-            <Button variant='primary' size='lg' href='#'>
+            <Button
+              variant='primary'
+              size='lg'
+              href='https://cardonation2veterans.com/'
+            >
               Donate Your Car
             </Button>
           </div>
