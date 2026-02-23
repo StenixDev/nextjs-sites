@@ -45,15 +45,17 @@ export default function Programs() {
                   {program.description}
                 </p>
 
-                <Link href={program.link}>
-                  <Button
-                    variant='primary'
-                    size='sm'
-                    className='w-full justify-center mt-auto cursor-pointer'
-                  >
-                    Learn More
-                  </Button>
-                </Link>
+                {program.link && (
+                  <Link href={program.link}>
+                    <Button
+                      variant='primary'
+                      size='sm'
+                      className='w-full justify-center mt-auto cursor-pointer'
+                    >
+                      Learn More
+                    </Button>
+                  </Link>
+                )}
               </Card>
             );
           })}

@@ -27,7 +27,7 @@ export const PROGRAMS = [
       "Direct financial assistance for urgent bills for active duty personnel, veterans, widows, and orphans. We're here when families need help the most.",
     icon: 'heart',
     logo: 'MFA.jpg',
-    link: '/#',
+    link: 'https://militaryfamiliesaid.org/',
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ export const PROGRAMS = [
       'Our 501(c)(3) charity main funding source. Donate your car or truck, picked up within 48 hours. You receive a tax-deductible receipt for market value up to $500, or full sale price if sold for more.',
     icon: 'car',
     logo: 'cardon2veterans.webp',
-    link: '/#',
+    link: 'https://www.cardonation2veterans.com/',
   },
   {
     id: 4,
@@ -57,7 +57,7 @@ export const PROGRAMS = [
       'Financial aid for homeless veterans including food, shelter, and medical needs. We work to give those who served our country a place to call home.',
     icon: 'home',
     logo: 'homelessVet.jpg',
-    link: '/#',
+    link: '',
   },
   {
     id: 6,
@@ -67,7 +67,7 @@ export const PROGRAMS = [
       'Augments guidance from base chaplaincies, providing spiritual support and guidance to military personnel and their families during challenging times.',
     icon: 'cross',
     logo: 'tgw.webp',
-    link: '/#',
+    link: 'https://thegodlyway.org/',
   },
 ];
 
