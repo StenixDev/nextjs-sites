@@ -9,7 +9,6 @@ interface ButtonProps {
   target?: string;
   onClick?: () => void;
   type?: 'button' | 'submit' | 'reset';
-  asChild?: boolean;
 }
 
 export default function Button({
@@ -21,7 +20,6 @@ export default function Button({
   target = '',
   onClick,
   type = 'button',
-  asChild = false,
 }: ButtonProps) {
   const baseStyles =
     'inline-flex items-center justify-center font-bold rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2';

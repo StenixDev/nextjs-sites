@@ -1,6 +1,4 @@
-"use client";
-
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
 interface CardProps {
   children: ReactNode;
@@ -11,7 +9,7 @@ interface CardProps {
 
 export default function Card({
   children,
-  className = "",
+  className = '',
   hover = true,
   onClick,
 }: CardProps) {
@@ -20,7 +18,7 @@ export default function Card({
       onClick={onClick}
       className={`
         bg-white rounded-lg shadow-md p-6 
-        ${hover ? "hover:shadow-xl transition-shadow duration-300" : ""}
+        ${hover ? 'hover:shadow-xl transition-shadow duration-300' : ''}
         ${className}
       `}
     >

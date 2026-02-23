@@ -3,7 +3,7 @@ import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import { PROGRAMS } from '@/data/siteData';
 import Image from 'next/image';
-import { Link } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Programs() {
   return (
@@ -45,13 +45,15 @@ export default function Programs() {
                   {program.description}
                 </p>
 
-                <Button
-                  variant='primary'
-                  size='sm'
-                  className='w-full justify-center mt-auto cursor-pointer'
-                >
-                  <Link href={program.link}>Learn More</Link>
-                </Button>
+                <Link href={program.link}>
+                  <Button
+                    variant='primary'
+                    size='sm'
+                    className='w-full justify-center mt-auto cursor-pointer'
+                  >
+                    Learn More
+                  </Button>
+                </Link>
               </Card>
             );
           })}
