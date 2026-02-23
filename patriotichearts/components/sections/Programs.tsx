@@ -26,8 +26,8 @@ export default function Programs() {
                     <Image
                       src={`/programs/${program.logo}`}
                       alt={program.title}
-                      width={100}
-                      height={100}
+                      width={250}
+                      height={200}
                       className='mb-3'
                     />
                     <h3 className='text-lg font-serif font-bold text-patriotic-navy'>
