@@ -44,10 +44,10 @@ export const PROGRAMS = [
     title: 'Veteran Enterprises',
     tagline: 'A Biz 4 Veterans!',
     description:
-      'The mission of Veteran Enterprises is to empower military veterans to achieve financial independence and professional fulfillment through the mastery of service-based entrepreneurship',
+      'We provide each US Veteran: One on one training in every aspect of incorporation, a training manual, all necessary and new equipment, cleaning maintenance.',
     icon: 'sparkles',
     logo: 'usve.jpg',
-    link: '/#',
+    link: '/veteran-enterprises',
   },
   {
     id: 5,

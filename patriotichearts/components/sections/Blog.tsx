@@ -1,5 +1,3 @@
-'use client';
-
 import { Calendar, ArrowRight } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Card from '@/components/ui/Card';

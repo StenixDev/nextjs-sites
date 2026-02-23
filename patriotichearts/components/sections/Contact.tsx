@@ -58,7 +58,12 @@ export default function Contact() {
 
               {/* Office Hours */}
               <div className='mt-8 pt-6 border-t border-gray-200 flex justify-center'>
-                <Image src={alignable} alt='Highly Recommended by locals' />
+                <a
+                  href='https://www.alignable.com/carlsbad-ca/patriotic-hearts-hirepatriots-us-military-maintenance'
+                  target='_blank'
+                >
+                  <Image src={alignable} alt='Highly Recommended by locals' />
+                </a>
               </div>
             </Card>
           </div>

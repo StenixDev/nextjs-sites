@@ -1,5 +1,3 @@
-'use client';
-
 import { Medal, Award, Trophy, Star, Tv, BookOpen } from 'lucide-react';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Card from '@/components/ui/Card';
@@ -52,7 +50,12 @@ export default function Awards() {
         </div>
       </section>
       <div className=' bg-patriotic-navy py-10 px-5 flex justify-center items-center'>
-        <Image src={PeopleFirstbanner} alt='People First ' />
+        <a
+          href='https://hirepatriots.com/people-first-initiative-2013'
+          target='_blank'
+        >
+          <Image src={PeopleFirstbanner} alt='People First ' />
+        </a>
       </div>
     </>
   );
