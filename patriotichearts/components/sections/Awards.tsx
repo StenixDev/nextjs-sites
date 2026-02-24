@@ -26,20 +26,25 @@ export default function Awards() {
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
             {AWARDS.map((award, index) => {
               const Icon = iconMap[award.icon];
+
+              const isLastOdd =
+                AWARDS.length % 3 === 1 && index === AWARDS.length - 1;
+
               return (
                 <Card
                   key={award.id}
-                  className='text-center h-full border-b-4 border-b-patriotic-gold'
+                  className={`text-center h-full border-b-4 border-b-patriotic-gold
+          ${isLastOdd ? 'lg:col-start-2' : ''}
+        `}
                 >
                   <div
                     className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 ${
-                      index % 2 === 0
-                        ? 'bg-patriotic-gold'
-                        : 'bg-patriotic-navy'
+                      index % 2 === 0 ? 'bg-patriotic-red' : 'bg-patriotic-navy'
                     }`}
                   >
                     <Icon className='h-8 w-8 text-white' />
                   </div>
+
                   <h3 className='text-lg font-serif font-bold text-patriotic-navy'>
                     {award.title}
                   </h3>

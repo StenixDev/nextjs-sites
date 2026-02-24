@@ -102,6 +102,12 @@ export const AWARDS = [
     title: 'PEOPLE Magazine\'s "America\'s Heroes Among Us"',
     icon: 'book',
   },
+
+  {
+    id: 7,
+    title: '"Outstanding Patriot" California Senate Award',
+    icon: 'star',
+  },
 ];
 
 export const TEAM_MEMBERS = [
