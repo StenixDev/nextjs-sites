@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { Phone, MapPin, Mail } from 'lucide-react';
-import { SOCIAL_LINKS, CONTACT_INFO } from '@/data/siteData';
+import { CONTACT_INFO } from '@/data/siteData';
 import Image from 'next/image';
 import Logo from '@/public/PH-LOGO.png';
 
-const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {};
+// const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {};
 
 export default function Footer() {
   return (
@@ -17,9 +17,7 @@ export default function Footer() {
               <div className='w-10 h-10  rounded-full flex items-center justify-center'>
                 <Image src={Logo} alt='PatrioticHearts' />
               </div>
-              <span className='font-serif font-bold text-xl'>
-                Patriotic Hearts
-              </span>
+              <span className='font-serif font-bold text-xl'>Houston</span>
             </div>
             <p className='text-gray-300 mb-4'>
               A non-profit organization dedicated to assisting US Military,
@@ -96,12 +94,6 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-
-            {/* Social Links */}
-            <div className='mt-6'>
-              <h4 className='font-medium mb-3'>Follow Us</h4>
-              <div className='flex space-x-4'>social links</div>
-            </div>
           </div>
         </div>
 

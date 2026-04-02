@@ -23,7 +23,7 @@ export default function Navbar() {
                 </span>
               </div>
               <span className='font-serif font-bold text-xl hidden sm:block'>
-                Patriotic Hearts
+                Houston
               </span>
             </Link>
           </div>

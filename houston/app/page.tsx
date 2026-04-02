@@ -1,3 +1,8 @@
+import Blog from '@/components/sections/Blog';
+import DonationCTA from '@/components/sections/DonationCTA';
+import Hero from '@/components/sections/Hero';
+import Programs from '@/components/sections/Programs';
+
 export const metadata = {
   title:
     'Patriotic hearts - Making the Lives of American Heroes and their Families Better',
@@ -8,7 +13,10 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <p>PatrioticHeart Houston</p>
+      <Hero />
+      <Programs />
+      <DonationCTA />
+      <Blog />
     </>
   );
 }
