@@ -52,7 +52,7 @@ export default function Programs() {
                       size='sm'
                       className='w-full justify-center mt-auto cursor-pointer'
                     >
-                      Learn More
+                      {program.linkText ? 'Post a Job' : 'Learn More'}
                     </Button>
                   </Link>
                 )}

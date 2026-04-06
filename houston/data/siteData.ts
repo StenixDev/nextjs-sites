@@ -17,7 +17,8 @@ export const PROGRAMS = [
       "Focuses on employment opportunities for veterans including daily, part-time, and full-time positions. We connect America's heroes with meaningful career opportunities.",
     icon: 'briefcase',
     logo: 'HP-optimized.webp',
-    link: '/hirepatriots',
+    link: 'https://hirepatriots.com/jobs',
+    linkText: true,
   },
   {
     id: 2,
