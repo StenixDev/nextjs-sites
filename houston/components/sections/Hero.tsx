@@ -19,7 +19,7 @@ export default function Hero() {
           </div>
 
           <h1 className='text-4xl sm:text-5xl md:text-6xl font-serif font-bold mb-6 leading-tight'>
-            Making the Lives of American Heroes and their Families Better
+            Serving Houston’s Heroes and Strengthening Their Families
           </h1>
 
           <p className='text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto'>

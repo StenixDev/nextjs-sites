@@ -43,7 +43,7 @@ export default function Footer() {
                   href='/#about'
                   className='text-gray-300 hover:text-patriotic-red transition-colors'
                 >
-                  About Us
+                  About
                 </Link>
               </li>
               <li>

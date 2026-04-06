@@ -66,26 +66,6 @@ export default function DonationCTA() {
         </div>
 
         {/* Impact Stats */}
-        <div className='mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center'>
-          <div>
-            <div className='text-3xl font-bold text-patriotic-red'>20+</div>
-            <div className='text-sm text-gray-300'>Years of Service</div>
-          </div>
-          <div>
-            <div className='text-3xl font-bold text-patriotic-red'>
-              501(c)(3)
-            </div>
-            <div className='text-sm text-gray-300'>Non-Profit Status</div>
-          </div>
-          <div>
-            <div className='text-3xl font-bold text-patriotic-red'>6</div>
-            <div className='text-sm text-gray-300'>Programs</div>
-          </div>
-          <div>
-            <div className='text-3xl font-bold text-patriotic-red'>100%</div>
-            <div className='text-sm text-gray-300'>Veteran Focused</div>
-          </div>
-        </div>
       </div>
     </section>
   );

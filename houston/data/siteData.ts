@@ -1,6 +1,6 @@
 export const NAV_LINKS = [
   // {   href: '/', label: 'Home' },
-  { href: '/#about', label: 'About Us' },
+  { href: '/#about', label: 'About' },
   { href: '/#programs', label: 'Programs' },
   { href: '/#awards', label: 'Awards' },
   // { href: '/#blog', label: 'Blog' },
@@ -38,36 +38,6 @@ export const PROGRAMS = [
     icon: 'car',
     logo: 'cardon2veterans.webp',
     link: 'https://www.cardonation2veterans.com/',
-  },
-  {
-    id: 4,
-    title: 'Veteran Enterprises',
-    tagline: 'A Biz 4 Veterans!',
-    description:
-      'We provide each US Veteran: One on one training in every aspect of incorporation, a training manual, all necessary and new equipment, cleaning maintenance.',
-    icon: 'sparkles',
-    logo: 'usve.jpg',
-    link: '/veteran-enterprises',
-  },
-  {
-    id: 5,
-    title: 'Homeless Veterans',
-    tagline: 'Lifting up Veterans living rough',
-    description:
-      'Financial aid for homeless veterans including food, shelter, and medical needs. We work to give those who served our country a place to call home.',
-    icon: 'home',
-    logo: 'homelessVet.jpg',
-    link: '',
-  },
-  {
-    id: 6,
-    title: 'Godly Way Ministries',
-    tagline: 'Christianity and the US Military',
-    description:
-      'Augments guidance from base chaplaincies, providing spiritual support and guidance to military personnel and their families during challenging times.',
-    icon: 'cross',
-    logo: 'tgw.webp',
-    link: 'https://thegodlyway.org/',
   },
 ];
 
