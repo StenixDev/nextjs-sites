@@ -194,7 +194,7 @@ export const SOCIAL_LINKS = [
 ];
 
 export const CONTACT_INFO = {
-  address: '300 Carlsbad Village Dr., Ste 108A, #159, Carlsbad, CA 92008',
-  phone: '760-730-3734',
-  email: 'founder@patriotichearts.org',
+  address: '7906 Sleek Flock Ln, Rosharon, TX 77583',
+  phone: '(719) 896-9365',
+  email: 'houston@patriotichearts.org',
 };
