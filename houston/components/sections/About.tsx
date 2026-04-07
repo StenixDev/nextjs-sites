@@ -45,6 +45,10 @@ export default function About() {
               and their loved ones. His leadership reflects the core values of
               honor, compassion, and community that define Patriotic Hearts.
             </p>
+            <br />
+            <span>📞 (719) 896-9365</span>
+            <br />
+            <span>📧 houston@patriotichearts.org</span>
           </Card>
 
           {/* Car Donation Program */}
