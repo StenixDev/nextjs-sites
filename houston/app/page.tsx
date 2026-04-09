@@ -1,6 +1,6 @@
 import About from '@/components/sections/About';
 import Awards from '@/components/sections/Awards';
-import Blog from '@/components/sections/Blog';
+
 import Contact from '@/components/sections/Contact';
 import DonationCTA from '@/components/sections/DonationCTA';
 import Hero from '@/components/sections/Hero';
