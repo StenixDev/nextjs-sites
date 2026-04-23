@@ -27,10 +27,10 @@ export default function Hero() {
           </p>
 
           <div className='flex flex-col sm:flex-row justify-center gap-4'>
-            <Button variant='primary' size='lg' href='#donate'>
+            <Button variant='primary' size='lg' href='https://hirepatriots.com/jobs'  target="_blank">
               Post a Job
             </Button>
-            <Button variant='outline' size='lg' href='#programs'>
+            <Button variant='outline' size='lg' href='https://hirepatriots.com/jobs' target="_blank">
               Search Jobs
             </Button>
           </div>

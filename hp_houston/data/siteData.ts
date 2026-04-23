@@ -1,7 +1,7 @@
 export const NAV_LINKS = [
   // {   href: '/', label: 'Home' },
   { href: '/#about', label: 'About Us' },
-  { href: '/#programs', label: 'Programs' },
+ 
   { href: '/#awards', label: 'Awards' },
   // { href: '/#blog', label: 'Blog' },
   // { href: '/#books', label: 'Books' },

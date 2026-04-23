@@ -63,14 +63,7 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
-              <li>
-                <Link
-                  href='/#programs'
-                  className='text-gray-300 hover:text-patriotic-red transition-colors'
-                >
-                  Programs
-                </Link>
-              </li>
+              
               <li>
                 <Link
                   href='/#contact'
@@ -112,27 +105,7 @@ export default function Footer() {
               </li>
             </ul>
 
-            {/* Social Links */}
-            <div className='mt-6'>
-              <h4 className='font-medium mb-3'>Follow Us</h4>
-              <div className='flex space-x-4'>
-                {SOCIAL_LINKS.map((social) => {
-                  const Icon = iconMap[social.icon];
-                  return (
-                    <a
-                      key={social.name}
-                      href={social.href}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      className='text-gray-300 hover:text-patriotic-red transition-colors'
-                      aria-label={social.name}
-                    >
-                      <Icon className='h-5 w-5 ' />
-                    </a>
-                  );
-                })}
-              </div>
-            </div>
+           
           </div>
         </div>
 

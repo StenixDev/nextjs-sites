@@ -2,39 +2,53 @@ import SectionHeading from '@/components/ui/SectionHeading';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
 import { Heart, Shield, Car } from 'lucide-react';
+import Image from 'next/image';
 
 export default function About() {
   return (
     <section id='about' className='py-16 md:py-24 bg-gray-50'>
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <SectionHeading
-          title='About Patriotic Hearts'
+          title='Houston Chapter'
           subtitle='Dedicated to serving those who served our nation'
         />
 
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-start'>
           {/* Mission Statement */}
-          <Card className='h-full'>
+         <Card className='h-full'>
             <div className='flex items-center mb-4'>
-              <div className='w-12 h-12 bg-patriotic-red rounded-full flex items-center justify-center mr-4'>
-                <Heart className='h-6 w-6 text-white' />
+              <div className='w-12 h-12 rounded-full flex items-center justify-center mr-4'>
+                <Image
+                  src='/jeremy-white.jpg'
+                  alt='Jeremy White'
+                  width={120}
+                  height={120}
+                  className='rounded-full'
+                />
               </div>
               <h3 className='text-xl font-serif font-bold text-patriotic-navy'>
-                Our Mission
+                Jeremy White
               </h3>
             </div>
             <p className='text-gray-600 mb-4'>
-              <strong>Patriotic Hearts Inc.</strong> is a non-profit
-              organization established under California law. Our primary mission
-              is to assist US Military, Veterans, and their families in having
-              happy, successful, and fulfilling lives.
+              <strong>Jeremy White</strong> is a dedicated supporter of the
+              mission behind Patriotic Hearts and the driving force behind the
+              Houston chapter. With a deep respect for those who serve our
+              nation, Jeremy is committed to making a meaningful impact in the
+              lives of American heroes and their families within the Houston
+              community.
             </p>
             <p className='text-gray-600'>
-              We believe that those who have sacrificed for our nation deserve
-              our unwavering support in return. Through our various programs and
-              initiatives, we work tirelessly to honor their service and make a
-              meaningful difference in their lives.
+              Motivated by a passion for service and a heart for giving back,
+              Jeremy took the initiative to help establish the Houston chapter.
+              Creating new opportunities to support veterans, first responders,
+              and their loved ones. His leadership reflects the core values of
+              honor, compassion, and community that define Patriotic Hearts.
             </p>
+            <br />
+            <span>📞 (719) 896-9365</span>
+            <br />
+            <span>📧 houston@patriotichearts.org</span>
           </Card>
 
           {/* Car Donation Program */}
