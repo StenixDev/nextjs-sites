@@ -1,7 +1,7 @@
 import SectionHeading from '@/components/ui/SectionHeading';
 import Card from '@/components/ui/Card';
 import Button from '@/components/ui/Button';
-import { Heart, Shield, Car } from 'lucide-react';
+import { Shield, Car } from 'lucide-react';
 import Image from 'next/image';
 
 export default function About() {
@@ -15,7 +15,7 @@ export default function About() {
 
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-start'>
           {/* Mission Statement */}
-         <Card className='h-full'>
+          <Card className='h-full'>
             <div className='flex items-center mb-4'>
               <div className='w-12 h-12 rounded-full flex items-center justify-center mr-4'>
                 <Image
@@ -41,9 +41,9 @@ export default function About() {
             <p className='text-gray-600'>
               Motivated by a passion for service and a heart for giving back,
               Jeremy took the initiative to help establish the Houston chapter.
-              Creating new opportunities to support veterans, first responders,
-              and their loved ones. His leadership reflects the core values of
-              honor, compassion, and community that define Patriotic Hearts.
+              Creating new opportunities to support veterans, and their loved
+              ones. His leadership reflects the core values of honor,
+              compassion, and community that define Patriotic Hearts.
             </p>
             <br />
             <span>📞 (719) 896-9365</span>

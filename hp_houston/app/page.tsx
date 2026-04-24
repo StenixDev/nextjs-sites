@@ -12,7 +12,7 @@ export default function Home() {
       <Hero />
 
       <section className='py-16 md:py-24 bg-gray-50'>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row md:py-3 items-center gap-5'>
           <div className='flex-1'>
             <iframe
               width='560'
