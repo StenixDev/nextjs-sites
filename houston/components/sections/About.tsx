@@ -41,9 +41,9 @@ export default function About() {
             <p className='text-gray-600'>
               Motivated by a passion for service and a heart for giving back,
               Jeremy took the initiative to help establish the Houston chapter.
-              Creating new opportunities to support veterans, first responders,
-              and their loved ones. His leadership reflects the core values of
-              honor, compassion, and community that define Patriotic Hearts.
+              Creating new opportunities to support veterans, and their loved
+              ones. His leadership reflects the core values of honor,
+              compassion, and community that define Patriotic Hearts.
             </p>
             <br />
             <span>📞 (719) 896-9365</span>
