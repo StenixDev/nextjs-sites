@@ -5,6 +5,7 @@ import DonationCTA from '@/components/sections/DonationCTA';
 import Awards from '@/components/sections/Awards';
 
 import Contact from '@/components/sections/Contact';
+import Blog from '@/components/sections/Blog';
 
 export default function Home() {
   return (
@@ -40,6 +41,8 @@ export default function Home() {
       <About />
 
       <DonationCTA />
+
+      <Blog />
       <Awards />
 
       <Contact />
