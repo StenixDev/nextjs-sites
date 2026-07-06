@@ -2,6 +2,7 @@ import Navbar from '@/components/Navbar';
 import { Arrow, Star } from '@/components/Icons';
 import Logo from '@/assets/MWA-Logo.png';
 import MWAProgram from '@/assets/MWA-program.jpg';
+import HeroImg from '@/assets/hero.png';
 import Image from 'next/image';
 
 const priorities = [
@@ -70,42 +71,10 @@ export default function Home() {
           </div>
 
           <div
-            className='reveal delay-2 relative mx-auto hidden h-125 w-full max-w-12 lg:block'
+            className='reveal delay-2 relative mx-auto hidden h-125 w-full  lg:block'
             aria-hidden='true'
           >
-            <div className='absolute inset-7 rounded-full border border-white/20' />
-            <div className='absolute inset-14 rounded-full border border-dashed border-white/25' />
-            <div className='absolute inset-[5.6rem] grid place-items-center rounded-full bg-cream text-navy shadow-[0_30px_80px_rgba(0,0,0,.35)]'>
-              <div className='absolute inset-3 rounded-full border-2 border-navy/15' />
-              <div className='absolute inset-6 rounded-full border border-navy/15' />
-              <div className='relative text-center'>
-                <div className='flex justify-center gap-2 text-patriot'>
-                  <Star className='h-4 w-4' />
-                  <Star className='h-4 w-4' />
-                  <Star className='h-4 w-4' />
-                </div>
-                <div className='display mt-5 text-5xl font-bold leading-[.88]'>
-                  Love
-                  <br />
-                  <span className='italic text-patriot'>outlives</span>
-                  <br />
-                  loss
-                </div>
-                <div className='mx-auto my-5 h-px w-20 bg-navy/25' />
-                <div className='text-[9px] font-bold uppercase tracking-[.28em]'>
-                  Honor · Hope · Home
-                </div>
-              </div>
-            </div>
-            <div className='absolute right-0 top-12 rounded-full bg-patriot px-5 py-3 text-[10px] font-bold uppercase tracking-[.2em] shadow-lg'>
-              Never forgotten
-            </div>
-            <div className='absolute bottom-14 left-0 flex items-center gap-3 rounded-full border border-white/20 bg-white/10 px-5 py-3 backdrop-blur-md'>
-              <span className='h-2 w-2 rounded-full bg-[#ff5a68]' />
-              <span className='text-[10px] font-bold uppercase tracking-[.18em]'>
-                No widow stands alone
-              </span>
-            </div>
+            <Image src={HeroImg} alt='Widow' fill className='object-cover' />
           </div>
         </div>
         <div className='absolute bottom-0 left-0 h-1 w-1/3 bg-patriot' />
@@ -277,14 +246,12 @@ export default function Home() {
           </div>
           <div className='flex flex-wrap gap-6 text-xs font-semibold text-white/55'>
             <a href='#mission' className='hover:text-white'>
-              Mission
+              Our Mission
             </a>
             <a href='#priorities' className='hover:text-white'>
               Advocacy
             </a>
-            <a href='#' className='hover:text-white'>
-              Privacy
-            </a>
+
             <span>© 2026</span>
           </div>
         </div>
