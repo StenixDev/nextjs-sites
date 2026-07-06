@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: #081f3d;
+  background: #f7f5f0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+::selection { background: #c3192d; color: white; }
+
+.display {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: -0.045em;
+}
+.star-grid {
+  background-image: radial-gradient(circle, rgba(255,255,255,.58) 1.35px, transparent 1.5px);
+  background-size: 26px 26px;
+}
+.fine-lines {
+  background-image: linear-gradient(rgba(8,31,61,.08) 1px, transparent 1px);
+  background-size: 100% 48px;
+}
+.stripe-word { position: relative; display: inline-block; z-index: 0; }
+.stripe-word::after {
+  content: "";
+  position: absolute;
+  height: .18em;
+  left: .02em;
+  right: -.08em;
+  bottom: .08em;
+  background: #c3192d;
+  z-index: -1;
+  transform: rotate(-1deg);
+}
+.reveal { animation: rise .75s cubic-bezier(.2,.7,.2,1) both; }
+.delay-1 { animation-delay: .12s; }
+.delay-2 { animation-delay: .24s; }
+@keyframes rise { from { opacity: 0; transform: translateY(20px); } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { animation: none; }
+}
