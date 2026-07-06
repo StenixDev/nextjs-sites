@@ -31,14 +31,14 @@ const priorities = [
 export default function Home() {
   return (
     <main className='overflow-hidden'>
-      <section className='relative min-h-[780px] overflow-hidden bg-navy text-white lg:min-h-[860px]'>
+      <section className='relative min-h-195 overflow-hidden bg-navy text-white lg:min-h-215'>
         <Navbar />
         <div className='star-grid absolute -right-24 top-0 h-[62%] w-[58%] opacity-20' />
         <div
-          className='absolute -left-40 bottom-[-22rem] h-[36rem] w-[36rem] rounded-full border-[7rem] border-patriot/10'
+          className='absolute -left-40 bottom-88 h-44 w-xl rounded-full border-[7rem] border-patriot/10'
           aria-hidden='true'
         />
-        <div className='relative mx-auto grid min-h-[780px] max-w-7xl items-center gap-12 px-5 pb-24 pt-36 sm:px-8 lg:min-h-[860px] lg:grid-cols-[1.12fr_.88fr] lg:px-10 lg:pt-32'>
+        <div className='relative mx-auto grid min-h-195 max-w-7xl items-center gap-12 px-5 pb-24 pt-36 sm:px-8 lg:min-h-215 lg:grid-cols-[1.12fr_.88fr] lg:px-10 lg:pt-32'>
           <div className='relative z-10 max-w-3xl'>
             <div className='reveal mb-7 flex items-center gap-3 text-[11px] font-bold uppercase tracking-[.26em] text-[#ff7b85]'>
               <Star className='h-3 w-3' /> Honoring sacrifice · supporting those
@@ -70,7 +70,7 @@ export default function Home() {
           </div>
 
           <div
-            className='reveal delay-2 relative mx-auto hidden h-[500px] w-full max-w-[480px] lg:block'
+            className='reveal delay-2 relative mx-auto hidden h-125 w-full max-w-12 lg:block'
             aria-hidden='true'
           >
             <div className='absolute inset-7 rounded-full border border-white/20' />
@@ -186,7 +186,7 @@ export default function Home() {
             {priorities.map((p, i) => (
               <article
                 key={p.n}
-                className={`group border-b border-navy/15 py-10 lg:min-h-[410px] lg:px-9 lg:py-12 ${i > 0 ? 'lg:border-l' : ''}`}
+                className={`group border-b border-navy/15 py-10 lg:min-h-102.5 lg:px-9 lg:py-12 ${i > 0 ? 'lg:border-l' : ''}`}
               >
                 <div className='mb-4 flex items-center justify-between'>
                   <span className='text-xs font-bold tracking-[.2em] text-patriot'>
@@ -216,11 +216,11 @@ export default function Home() {
                 Stand With a Military Widow
               </h2>
               <p className='mt-6 max-w-lg text-lg leading-8 text-navy/65'>
-                The sacrifice doesn't end with the loss of a service member. At
-                Patriotic Hearts, we stand beside military widows by providing
-                career pathways, business startup support, emergency financial
-                assistance, and caring resources that help them find stability,
-                independence, and renewed hope.
+                The sacrifice doesn&#39;t end with the loss of a service member.
+                At Patriotic Hearts, we stand beside military widows by
+                providing career pathways, business startup support, emergency
+                financial assistance, and caring resources that help them find
+                stability, independence, and renewed hope.
               </p>
 
               <div className='reveal delay-2 mt-9 flex flex-col gap-3 sm:flex-row'>
