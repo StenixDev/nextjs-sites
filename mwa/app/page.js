@@ -229,9 +229,12 @@ export default function Home() {
             ground in the job market.
           </p>
           <form className='mx-auto mt-9 flex max-w-xl flex-col gap-3 sm:flex-row justify-center'>
-            <button className='rounded-full bg-white px-7 py-4 text-sm font-bold text-navy transition hover:bg-cream'>
+            <a
+              href='https://form.jotform.com/261878071219059'
+              className='rounded-full bg-white px-7 py-4 text-sm font-bold text-navy transition hover:bg-cream'
+            >
               Get Personal Job Advocacy Today <span aria-hidden='true'>→</span>
-            </button>
+            </a>
           </form>
         </div>
       </section>
@@ -241,7 +244,9 @@ export default function Home() {
           <div className='flex items-center gap-3'>
             <Image src={Logo} alt='Military Widows Advocacy' width={40} />
             <span className='text-sm font-bold uppercase tracking-[.18em]'>
-              Military Widows Advocacy
+              <span className='text-[15px] font-bold uppercase tracking-[.18em]'>
+                US <span className='text-[#f16873]'>Military</span> Widows
+              </span>
             </span>
           </div>
           <div className='flex flex-wrap gap-6 text-xs font-semibold text-white/55'>

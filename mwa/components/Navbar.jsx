@@ -21,7 +21,7 @@ export default function Navbar() {
         >
           <Image src={Logo} alt='Military Widows Advocacy' width={70} />
           <span className='text-[15px] font-bold uppercase tracking-[.18em]'>
-            Military <span className='text-[#f16873]'>Widows</span> Advocacy
+            US <span className='text-[#f16873]'>Military</span> Widows
           </span>
         </a>
         <div className='hidden items-center gap-9 text-sm font-semibold md:flex'>
