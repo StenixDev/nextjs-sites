@@ -13,7 +13,7 @@ const priorities = [
   },
   {
     n: '02',
-    title: 'Local Market &amp; Company Research',
+    title: 'Local Market & Company Research',
     text: 'You don’t have to search alone. We analyze your local geographic area and nearest metropolitan hubs to find businesses and industries that match your skills and share our patriotic values.',
   },
   {
@@ -26,6 +26,21 @@ const priorities = [
     n: '04',
     title: 'Direct Corporate Advocacy (The Power Call)',
     text: 'This is where we break the mold. Once your application is submitted, our leadership personally calls the company’s HR or hiring manager. We bridge the gap, transfer our trust, and advocate directly for your application—ensuring a human being sees the incredible person behind the paper.',
+  },
+];
+
+const advocacyBenefits = [
+  {
+    title: 'Breaking the “Black Hole” of Resumes',
+    text: 'Most companies use Applicant Tracking Systems (ATS) that screen resumes for specific keywords. If a military widow has a resume gap due to frequent military moves or grieving, a computer automatically tosses it out. A direct phone call forces a human being to actually look at the person behind the paper.',
+  },
+  {
+    title: 'Overcoming the “Experience Gap” Myth',
+    text: 'Military widows may have relocated frequently, sacrificed career continuity to support their spouse’s service, or suddenly entered the workforce as a single parent under immense stress. Direct advocacy frames that background not as a gap, but as proof of unmatched resilience, adaptability, and problem-solving.',
+  },
+  {
+    title: 'Leveraging High-Value Referrals',
+    text: 'Business owners and hiring managers are busy. When a respected peer or advocate personally vouches for someone’s character and potential, it reduces the employer’s perceived risk and helps a qualified candidate stand out.',
   },
 ];
 
@@ -151,25 +166,51 @@ export default function Home() {
               employment journey from start to finish.
             </p>
           </div>
-          <div className='grid border-t border-navy/15 lg:grid-cols-2'>
-            {priorities.map((p, i) => (
-              <article
-                key={p.n}
-                className={`group border-b border-navy/15 py-10 lg:min-h-102.5 lg:px-9 lg:py-12 ${i > 0 ? 'lg:border-l' : ''}`}
-              >
-                <div className='mb-4 flex items-center justify-between'>
-                  <span className='text-xs font-bold tracking-[.2em] text-patriot'>
-                    {p.n}
-                  </span>
-                </div>
-                <h3 className='display max-w-xs text-3xl font-bold leading-tight'>
-                  {p.title}
-                </h3>
-                <p className='mt-5 max-w-sm text-sm leading-7 text-navy/60'>
-                  {p.text}
-                </p>
-              </article>
-            ))}
+          <div>
+            <div className='grid border-t border-navy/15 xl:grid-cols-2'>
+              {priorities.map((p, i) => (
+                <article
+                  key={p.n}
+                  className={`group border-b border-navy/15 py-10 xl:min-h-102.5 xl:px-8 xl:py-12 ${i % 2 === 1 ? 'xl:border-l' : ''}`}
+                >
+                  <div className='mb-4 flex items-center justify-between'>
+                    <span className='text-xs font-bold tracking-[.2em] text-patriot'>
+                      {p.n}
+                    </span>
+                  </div>
+                  <h3 className='display max-w-xs text-3xl font-bold leading-tight'>
+                    {p.title}
+                  </h3>
+                  <p className='mt-5 max-w-sm text-sm leading-7 text-navy/60'>
+                    {p.text}
+                  </p>
+                </article>
+              ))}
+            </div>
+
+            <div className='mt-20 rounded-3xl bg-sky px-6 py-12 sm:mt-24 sm:px-10 sm:py-16 lg:px-14'>
+              <h3 className='display font-bold text-4xl leading-tight sm:text-5xl'>
+                Why Direct Advocacy Works So Well
+              </h3>
+              <div className='mt-10 grid gap-8 border-t border-navy/15 pt-8 md:grid-cols-3 md:divide-x md:divide-navy/15'>
+                {advocacyBenefits.map((benefit, i) => (
+                  <article
+                    key={benefit.title}
+                    className='pt-7 md:border-t-0 md:px-8 md:pt-0 md:first:pl-0 md:last:pr-0'
+                  >
+                    <div className='mb-3 text-xs font-bold tracking-[.2em] text-patriot'>
+                      0{i + 1}
+                    </div>
+                    <h4 className='text-base font-bold leading-6'>
+                      {benefit.title}
+                    </h4>
+                    <p className='mt-3 text-sm leading-6 text-navy/60'>
+                      {benefit.text}
+                    </p>
+                  </article>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
